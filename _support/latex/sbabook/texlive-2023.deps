@@ -1,3 +1,4 @@
+amsmath
 auxhook
 bigintcalc
 bitset
@@ -25,6 +26,7 @@ hyperref
 iftex
 infwarerr
 intcalc
+import
 kvdefinekeys
 kvoptions
 kvsetkeys
@@ -62,6 +64,7 @@ trimspaces
 unicode-data
 uniquecounter
 url
+ulem
 varwidth
 xcolor
 xkeyval
