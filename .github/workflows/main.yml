@@ -32,9 +32,10 @@ jobs:
 
       - name: Prepare TeXlive
         run: |
-          ./_support/latex/sbabook/ci/install-texlive
-          xargs tlmgr install < ./_support/latex/texlive.deps
+          TEXLIVE_RELEASE=2023 ./_support/latex/sbabook/ci/install-texlive
+          xargs tlmgr install < ./_support/latex/sbabook/texlive.deps
           tlmgr install import 
+          tlmgr install amsmath
 
       - name: Build PDF
         run: |

@@ -13,6 +13,6 @@ on:
 
 jobs:
   build:
-    uses: SquareBracketAssociates/booklet-template/.github/workflows/main.yml@main
+    uses: SquareBracketAssociates/BookBuilderDashboard/.github/workflows/main.yml@sbabook-upgrade
     with:
       bookname: vm-wip
