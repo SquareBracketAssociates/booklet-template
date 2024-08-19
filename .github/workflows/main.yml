@@ -35,6 +35,7 @@ jobs:
           ./_support/latex/sbabook/ci/install-texlive
           xargs tlmgr install < ./_support/latex/sbabook/texlive.deps
           tlmgr install import 
+          tlmgr install amsmath
 
       - name: Build PDF
         run: |
