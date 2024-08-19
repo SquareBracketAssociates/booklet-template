@@ -33,7 +33,7 @@ jobs:
       - name: Prepare TeXlive
         run: |
           ./_support/latex/sbabook/ci/install-texlive
-          xargs tlmgr install < ./_support/latex/texlive.deps
+          xargs tlmgr install < ./_support/latex/sbabook/texlive.deps
           tlmgr install import 
 
       - name: Build PDF
