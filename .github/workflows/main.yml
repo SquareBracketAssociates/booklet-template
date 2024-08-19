@@ -34,6 +34,7 @@ jobs:
         run: |
           ./_support/latex/sbabook/ci/install-texlive
           xargs tlmgr install < ./_support/latex/texlive.deps
+          tlmgr install import 
 
       - name: Build PDF
         run: |
