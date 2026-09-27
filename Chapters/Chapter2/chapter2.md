@@ -12,7 +12,7 @@ Output directory's default name is ''book-result'' but you can change it in the 
 `OUTPUTDIRECTORY` variable
 
 
-![blue %width=30](figures/pharo2.png )
+![blue %width=30](figures/pharo.png )
 ![jlklkjlk %width=30](figures/rmod.png )
 
 
