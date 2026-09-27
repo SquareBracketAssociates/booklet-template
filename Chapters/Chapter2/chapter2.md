@@ -12,8 +12,8 @@ Output directory's default name is ''book-result'' but you can change it in the 
 `OUTPUTDIRECTORY` variable
 
 
-![blue](figures/pharo.png width=30)
-![jlklkjlk](figures/rmod.png width=30)
+![blue %width=30](figures/pharo2.png )
+![jlklkjlk %width=30](figures/rmod.png )
 
 
 ### Example of Sync
@@ -21,7 +21,23 @@ Output directory's default name is ''book-result'' but you can change it in the 
 Now we can make sure that when we copy some code the checker will report to us if the code changed from the book.
 
 ```sync=true&origin=Point >> #degrees
-degrees	"Answer the angle the receiver makes with origin in degrees. right is 0; down is 90."	| tan theta |
-	"I changed this method my friend so you should report it"	^ x = 0		ifTrue:			[ y >= 0				ifTrue: [ 90.0 ]				ifFalse: [ 270.0 ] ]		ifFalse:			[ tan := y asFloat / x asFloat.			theta := tan arcTan.			x >= 0				ifTrue:					[ y >= 0						ifTrue: [ theta radiansToDegrees ]						ifFalse: [ 360.0 + theta radiansToDegrees ] ]				ifFalse: [ 180.0 + theta radiansToDegrees ] ]
+degrees
+	"Answer the angle the receiver makes with origin in degrees. right is 0; down is 90."
+	| tan theta |
+	"I changed this method lhkjhkjhjhk  friend so you should report it"
+	^ x = 0
+		ifTrue:
+			[ y >= 0
+				ifTrue: [ 90.0 ]
+				ifFalse: [ 270.0 ] ]
+		ifFalse:
+			[ tan := y asFloat / x asFloat.
+			theta := tan arcTan.
+			x >= 0
+				ifTrue:
+					[ y >= 0
+						ifTrue: [ theta radiansToDegrees ]
+						ifFalse: [ 360.0 + theta radiansToDegrees ] ]
+				ifFalse: [ 180.0 + theta radiansToDegrees ] ]
 ```
 
